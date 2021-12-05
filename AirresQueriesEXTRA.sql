@@ -1,0 +1,1 @@
+select fname, lname, trav_id, phno from traveller where trip_id in (select trip_id from flight_trip where trip_id in (select acode from airport where staete='West Bengal'));
